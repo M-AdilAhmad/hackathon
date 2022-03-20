@@ -1,0 +1,146 @@
+#loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:75vh;
+}
+
+#fam-container{
+    width:90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vh;
+    height:150px;
+}
+
+.fam-item{
+    flex:1;
+}
+
+.fam-item-card{
+    box-shadow: 0px 10px 30px -10px hsl(229, 6%, 66%);
+    height:100%;
+    width:90%;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(252, 252, 252);
+    border-top:3px solid black;
+}
+
+.fam-item-card:hover{
+    box-shadow: 0px 10px 30px -5px hsl(229, 6%, 66%);
+    background: white;
+}
+
+.fam-item-card-inner{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:85%;
+    width:85%;
+}
+
+.coin-info{
+    font-family: monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.coin-abbr, .coin-rate, .coin-info{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+
+.coin-abbr{
+    font-size: large;
+    color:grey;
+    font-weight: bolder;
+}
+
+.coin-rate{
+    font-size: large;
+    color:darkgreen;
+    font-weight: bolder;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+#footer-content{
+    color:black;
+}
+
+#main{
+    margin-top: 13vh;
+}
+
+@media only screen and (max-width: 850px){
+    #fam-container {flex-direction: column; height:600px;}
+    .fam-item{margin-top:4vh;}
+    #main #info{margin-top:8vh; display: block;}
+    #news{width:55%; margin: auto;}
+    #news #news-inner{width:100%; float: none;}
+    #table{margin-top:8vh;}
+    #main{margin-top: 12vh;}
+}
+
+@media only screen and (max-width: 246px){
+    #main{margin-top: 18vh;}
+}
+
+#info{
+    margin: auto;
+    margin-top:10vh;
+    width:88%; 
+    display: flex;   
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+#table{
+    flex-basis:70%;
+}
+
+#news{
+    flex-basis:30%;
+    min-width: 200px;
+}
+
+#news-inner{
+    width:80%;
+    float: right;
+}
+
+#news-inner .card-text{
+    height:150px;
+    display: flex;
+    align-items : center;
+    justify-content: center;
+}
+
+.red{
+    color:red;
+}
+
+.darkgreen{
+    color:darkgreen;
+}
+
+h1{
+    font-family: Impact, fantasy;
+    text-align: center;
+}
+
+#page-selector{
+    margin-top: 5vh;;
+}
